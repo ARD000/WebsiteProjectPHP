@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+  
+body, html {
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    overflow-x: hidden;
+}
+  
+.navbar {
+    background-color: #333; 
+    color: blue;
+}
+  
+.navbar a.nav-link {
+    color: black; 
+    background-color: white; 
+    border-radius: 25px; 
+    padding: 8px 12px; 
+    margin: 5px; 
+    transition: all 0.3s ease; 
+}
+  
+.navbar a.nav-link:hover {
+    color: red; 
+    background-color: white; 
+}
+  
+.navbar-brand {
+    font-size: 2.5rem; 
+    color: black !important; 
+    font-weight: bold; 
+}
+
+.navbar-brand:hover, .navbar-brand:focus {
+    color: red !important; 
+    transition: color 0.2s; 
+}
+  
+
+
+.section {
+    text-align: center;
+    padding: 2% 5%;
+    flex: 1; 
+}
+  
+h1.display-3 {
+    color: #091133;
+    font-size: 2.5rem;
+}
+  
+h3 {
+    color: #505f98;
+}
+  
+.footer {
+    background-color: #000; 
+    color: white;
+    text-align: center;
+    padding: 1%;
+    margin-top: auto; 
+}
+  
+.footer a {
+    color: white; 
+    text-decoration: none;
+}
+  
+.footer a:hover {
+    color: #FF0000;
+}
+  
+.icon-link {
+    background-color: #14127d;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+    display: inline-block;
+}
+
+.icon-link svg {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+}
+
+
+
+  
+a.icon-link:hover {
+    background-color: #87CEFA;
+    color: #FF0000;
+}
+
+.card:hover img {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+
+  
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background-color: #222; 
+    }
+    .navbar a.nav-link {
+        color: black; 
+    }
+}
